@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+#nav{
+  background-color: #f4d300;
+  width: 100%;
+  border: 1px solid #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;    /* 大於零或是數字越大者， 則元素越上層*/
+
+}
+
+.menu li{
+  width: 150px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 10px 0px;
+  
+
+  list-style-type: none;
+  text-align: center;
+  background-color: #f4d300;
+  color: black;
+  font-size: 20px;
+  display: inline-block;
+  float:right;   /* 讓 .menu 的按鈕靠右*/
+  margin-right: 10px; /* 隔開list 彼此之間的margin*/
+  margin-bottom: 10px;
+
+}
+
+
+
+#content{
+  background-color: #gray;
+  width: 100%;
+  
+   /* border: 1px solid blue;標示用，完成排版後刪除*/
+  position: relative;
+  top: 73px;
+  padding: 15px;
+}
+
+a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*游標移過 li 元素時，會有樣式的改變，觸動第一層li時，改變背景色的二動態選單鈕*/
+/* mouse over link */
+
+
+li:hover  {
+  border: 1px solid ##ffffff;
+  background-color: #fff;
+}
+
+li:hover a {
+  color: black;
+  font-weight: 800;
+}
+
+
+/* 文繞圖 float:left 圖片就會置於文字的左邊*/
+
+#profile-foto {
+  float: left;
+  margin-right: 20px;
+}
+
+/* 調整圖片寬度 */
+
+#profile-foto img {
+  width: 200px;
+}
+
+h1{
+  margin-bottom: 0;
+  text-align: center; /*  讓文字在按鈕正中間 */
+}
+
+#about h1 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+h3{
+  margin:0;
+}
+
+table{
+  font-size: 14px;
+  text-align: left;
+}
+
+th, td {
+  vertical-align: top;
+  font-size: 18px;
+}
+
+td{
+  color:#666;
+  padding-left:10px;
+}
+
+hr{
+  border:0.5px solid #eee;
+}
+
+/* my work */
+
+.item {
+  position: relative;
+  max-width: 30%;  /* max-width就是最大寬度，意思也就是「你沒有真正的寬度，但總之不要給我超過30%就對了！」 */
+  /* 追加屬性 */
+
+  display: inline-block;
+  margin-bottom: 10px;
+
+}
+
+.item-info {
+    /* border: 1px solid red; 標示用，排版完記得拿掉 */
+  background-color: rgba(255,255,255,.8);   /* 背景半透明 */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  padding: 25px 10px;
+  opacity: 0;
+  display: none;
+
+}
+
+.item-info:hover {
+  opacity: 1;
+}
+
+.item:hover .item-info {
+  display: block;
+}
+
+.item img{
+
+  width: 100%;
+
+}
+
+#my-skill-gallery {  /* #my-work 圖片置中 */
+  text-align: center;
+}
+
+#contact {
+   /* border: 1px solid green; 標示用，完成後刪除 */
+}
+
+form.contact-form{
+    /* border: 1px solid red;標示用，完成後刪除 */
+  width: 50%;
+  margin: 0 auto;
+
+}
+
+.form-row{
+
+  margin-bottom:15px;
+}
+
+.form-row input, .form-row textarea{
+  border-radius: 3px;
+  width: 100%;
+  border: 1px solid #D6D9DC;
+  padding: 7px;
+}
+
+.form-row textarea{
+  resize:none;
+  height: 4em;
+
+}
+
+.form-row button{
+  border:none;
+  border-radius: 3px;
+  padding: 8px 10px;
+  cursor:pointer;
+}
+
+.form-row button[type="Submit"] {
+  background-color: #5995DA;
+  color: #ffffff;
+}
+
+.form-row button:hover {
+  background-color: #cdf733;
+}
+
+.form-row button:active {
+  background-color: #407FC7;
+}
+
+.whole{  /* Lighthouse 的「完成排版佈局，調整細節到位」單元裡則是 .container
+這是為了方便使用者以各式各樣的螢幕尺寸來觀看網頁，排版都有個固定的位置，不會跑掉 */
+
+  
+  width: 800px;
+  margin: 0 auto;
+}
+
+#content > .container > div {
+  padding: 78px 0;
+}
+
+
+
+/* 水平線的樣式 */
+hr.bar {
+  border: 1px solid #8b9cb7;
+  width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
